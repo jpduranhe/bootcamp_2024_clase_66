@@ -35,7 +35,7 @@ public class ProductoController {
 		boolean resultado= productoService.nuevoProducto(producto);
 		String view="formulario-exito.jsp";
 		
-		if(resultado == false) {
+		if(!resultado == false) {
 			view="formulario-fallo.jsp";
 		}
 		return new ModelAndView(view);
